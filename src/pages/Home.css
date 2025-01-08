@@ -1,0 +1,75 @@
+.home {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: whitesmoke;
+	background-image: url("../assets/bureau.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+
+	/* Styles pour le h1 (titre principal de la page d'accueil) */
+	h1 {
+	font-size: 3rem; 
+	font-weight: 700;
+	color: #fff; 
+	text-align: center;
+	margin-top: -100px;
+}
+
+/* Styles pour le p (paragraphe sur la page d'accueil) */
+	p {
+	font-size: 1.2rem;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center; 
+	line-height: 1.6;
+	margin-top: 10px; 
+}
+
+.avatar-container {
+	margin-top: 20px;
+	position: relative;
+}
+.avatar-link {
+	position: relative;
+	display: inline-block;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	object-fit: cover;
+	transition: transform 0.3s ease, filter 0.3s ease;
+	cursor: pointer;
+}
+
+.avatar-link:hover .avatar {
+	transform: scale(1.1);
+	filter: brightness(80%);
+}
+.download-text {
+	padding-top: 10px;
+	margin-left: -150px;
+	position: absolute;
+	bottom: -20px;
+	width: 100%;
+	text-align: center;
+	font-size: 1rem;
+	color: #c45824;
+	font-weight: bold;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.avatar-link:hover .download-text {
+	opacity: 1;
+}

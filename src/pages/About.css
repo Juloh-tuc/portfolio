@@ -1,0 +1,140 @@
+.about {
+	margin: 50px auto;
+	padding: 40px 20px;
+	background-image: url(../assets/bureau.jpg);
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	color: #333;
+	text-align: center;
+	max-width: 1200px;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+
+.about-content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Titre de la section Mon histoire */
+.about h2 {
+	font-size: 2.8rem;
+	color: whitesmoke;
+	margin-bottom: 20px;
+	font-family: "Roboto", sans-serif;
+}
+
+/* Paragraphe descriptif */
+.about p {
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 1.8;
+	color: rgb(240, 232, 232);
+	margin-bottom: 30px;
+}
+
+/* Titre des compétences */
+.about h3 {
+	font-size: 2rem;
+	color: whitesmoke;
+	margin-bottom: 20px;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Liste des compétences */
+.about ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.about ul li {
+	font-size: 1.1rem;
+	color: black;
+	margin: 10px 0;
+	font-family: "Roboto", sans-serif;
+}
+
+
+.about ul li strong {
+	color: #c45824;
+}
+
+/* Liste visuelle des compétences */
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	gap: 20px;
+}
+
+.skill-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	color: #fff;
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 12px;
+	border: 2px solid#c45824;
+	width: 120px;
+	text-align: center;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+	transform: translateY(-5px);
+}
+
+.skill-icon {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+/* Conteneur pour l'image */
+.about-image {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #fff;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Adaptabilité */
+@media (max-width: 768px) {
+	.about {
+		padding: 30px 15px;
+	}
+
+	.about h2 {
+		font-size: 2.2rem;
+	}
+
+	.about h3 {
+		font-size: 1.5rem;
+	}
+
+	.skills-list {
+		gap: 15px;
+	}
+
+	.skill-item {
+		width: 100px;
+		font-size: 0.9rem;
+	}
+}

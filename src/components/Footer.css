@@ -1,0 +1,53 @@
+.footer {
+	position: relative;
+	z-index: 10000000000000;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	font-size: 6px;
+	border-top: 2px solid black;
+}
+
+.footer p {
+	margin: 0;
+	font-size: 16px;
+	color: black;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 15px; /* Espacement entre les icônes */
+	margin-top: 10px;
+}
+
+.social-icon {
+	width: 25px;
+	height: 25px;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+	transform: scale(1.1); /* Effet de zoom au survol */
+	filter: brightness(1.2); /* Luminosité augmentée au survol */
+}
+
+@media (max-width: 768px) {
+	.footer {
+		padding: 20px 10px;
+	}
+
+	.footer p {
+		font-size: 14px; /* Taille de texte réduite sur petits écrans */
+	}
+
+	.social-links {
+		flex-direction: column; /* Les icônes se placent verticalement sur petits écrans */
+		gap: 10px;
+	}
+
+	.social-icon {
+		width: 30px; /* Un peu plus grandes sur petits écrans */
+		height: 30px;
+	}
+}
