@@ -14,29 +14,27 @@
 	overflow: hidden;
 }
 
-
-	/* Styles pour le h1 (titre principal de la page d'accueil) */
-	h1 {
-	font-size: 3rem; 
+h1 {
+	font-size: 3rem;
 	font-weight: 700;
-	color: #fff; 
+	color: #fff;
 	text-align: center;
 	margin-top: -100px;
 }
 
-/* Styles pour le p (paragraphe sur la page d'accueil) */
-	p {
+p {
 	font-size: 1.2rem;
 	color: rgba(255, 255, 255, 0.8);
-	text-align: center; 
+	text-align: center;
 	line-height: 1.6;
-	margin-top: 10px; 
+	margin-top: 10px;
 }
 
 .avatar-container {
 	margin-top: 20px;
 	position: relative;
 }
+
 .avatar-link {
 	position: relative;
 	display: inline-block;
@@ -57,11 +55,11 @@
 	transform: scale(1.1);
 	filter: brightness(80%);
 }
+
 .download-text {
-	padding-top: 10px;
+	padding-top: 20px;
 	margin-left: -150px;
 	position: absolute;
-	bottom: -20px;
 	width: 100%;
 	text-align: center;
 	font-size: 1rem;
@@ -70,6 +68,88 @@
 	opacity: 0;
 	transition: opacity 0.3s ease;
 }
+
 .avatar-link:hover .download-text {
 	opacity: 1;
+}
+
+/* Styles pour le bouton "Me Contacter" */
+			.button-blur {
+			background: rgba(255, 255, 255, 0.2); /* Semi-transparent pour laisser passer le flou */
+			backdrop-filter: blur(10px); /* Effet flou */
+			border: 1px solid rgba(255, 255, 255, 0.4); /* Bordure subtile */
+			border-radius: 12px;
+			padding: 12px 24px;
+			color: whitesmoke;
+			font-family: "Inter", sans-serif;
+			font-size: 16px;
+			font-weight: 500;
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			transition: all 0.3s ease;
+			cursor: pointer;
+			margin-top: 40px;
+		}
+
+.button-blur:hover {
+	background: rgba(255, 255, 255, 0.3); /* Rend le bouton un peu plus visible au survol */
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	transform: scale(1.05); /* Ajoute une légère animation au survol */
+}
+
+@media (max-width: 768px) {
+
+	.button-blur {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+
+}
+
+.avatar-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Organise les éléments verticalement */
+  align-items: center;
+  gap: 20px; /* Ajoute de l'espace entre l'avatar et le bouton */
+}
+
+.download-text {
+  padding-top: 20px;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+  font-size: 1rem;
+  color: #c45824;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.avatar-link:hover .download-text {
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+		margin-top: -50px;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	.avatar {
+		width: 120px;
+		height: 120px;
+	}
+
+	.button-56 {
+		font-size: 14px;
+		padding: 0 20px;
+		height: 40px;
+	}
 }

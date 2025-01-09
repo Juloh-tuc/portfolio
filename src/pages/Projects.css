@@ -1,7 +1,7 @@
 .projects {
 	padding: 50px 20px;
 	text-align: center;
-	background-image: url(../assets/bcg_projet.jpg);
+	background-image: url(../assets/back.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -10,6 +10,7 @@
 	font-size: 2.8rem;
 	color: #333;
 	margin-bottom: 30px;
+	margin-top: 35px;
 }
 
 .projects-grid {

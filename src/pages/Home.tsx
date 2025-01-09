@@ -1,8 +1,10 @@
 import "./Home.css";
 import avatar from "../assets/Moi.png";
-import cv from "../assets/MonCV.pdf"
+import cv from "../assets/MonCV.pdf";
 
-const Home = () => {
+
+function Home() {
+		
 	return (
 		<section className="home">
 			<div className="home-bg">
@@ -14,11 +16,16 @@ const Home = () => {
 
 				<div className="avatar-container">
 					<a href={cv} download="MonCV.pdf" className="avatar-link">
-						<img src={avatar} alt="Mon avatar" className="avatar" />{" "}
+						<img src={avatar} alt="Mon avatar" className="avatar" />
 						<span className="download-text">Télécharger mon CV</span>
+					</a>
+					
+					<a href="mailto:julie.tuco@gmail.com" className="button-blur">
+						Me Contacter
 					</a>
 				</div>
 			</div>
+			
 		</section>
 	);
 };

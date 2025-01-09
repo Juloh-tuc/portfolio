@@ -3,6 +3,7 @@ import TravelUp from "../assets/logoTravel.png";
 import BookWilder from "../assets/LogoBook.png";
 import LogoLetter from "../assets/LogoLetter.png";
 import LogoC from "../assets/LogoC.png";
+import LogoM from "../assets/LogoM.png";
 
 const Projects = () => {const projectsData = [
 		{
@@ -33,13 +34,13 @@ const Projects = () => {const projectsData = [
 			title: "Compte à rebours",
 			description: "projet personnel décompte pour le jour de l'an en JS",
 			image: LogoC,
-			link: "https://bonneannee2026.netlify.app",
+			link: "https://bonne-annee-2026.netlify.app/",
 		},
 		{
 			id: "5",
 			title: "Mathémagie",
 			description: "projet personnel décompte pour le jour de l'an en JS",
-			image: LogoC,
+			image: LogoM,
 			link: "mathemagie.remote-fr-2.wilders.dev",
 		},
 	];

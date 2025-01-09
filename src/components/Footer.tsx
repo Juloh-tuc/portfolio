@@ -2,9 +2,6 @@ import "./Footer.css";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 
-
-
-
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 	return (

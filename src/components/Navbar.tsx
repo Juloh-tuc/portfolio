@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/LogoJ.png"
+import logo from "../assets/LogoJ.png";
 
-const Navbar = () => {
+function Navbar() {
 	return (
 		<nav className="navbar">
 			<div className="navbar-container">
 				<div className="logo">
 					<Link to="/">
-						<img src={logo} alt="logo" className="logo" />
+						<img src={logo} alt="logo" className="logo-img" />
 					</Link>
 				</div>
 				<ul className="nav-links">
@@ -23,11 +23,6 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li>
-						<Link to="/contact">
-							<span className="first-letter">C</span>ontact
-						</Link>
-					</li>
-					<li>
 						<Link to="/projects">
 							<span className="first-letter">P</span>rojets
 						</Link>
@@ -36,6 +31,6 @@ const Navbar = () => {
 			</div>
 		</nav>
 	);
-};
+}
 
 export default Navbar;
