@@ -1,23 +1,43 @@
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import "./App.css"
+import { Outlet } from "react-router-dom";
+import github from "./assets/github.png";
+import linkedin from "./assets/linkedin.png";
+import Navbar from "./components/Navbar"; // Import du Navbar
+import "./App.css";
 
-const App = () => {
+function App() {
+	const currentYear = new Date().getFullYear();
+
 	return (
-		<>
+		<div className="layout">
+			{/* Utilisation du Navbar */}
 			<Navbar />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/projects" element={<Projects />} />
-			</Routes>
-			{/* <Footer /> */}
-		</>
+
+			{/* Main Content */}
+			<main>
+				<Outlet />
+			</main>
+
+			<footer className="footer">
+				<p>© {currentYear} Julie Lohier. Tous droits réservés.</p>
+				<div className="social-links">
+					<a
+						href="https://www.linkedin.com/in/julie-lohier-b71b711ab/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src={linkedin} alt="LinkedIn" className="social-icon" />
+					</a>
+					<a
+						href="https://github.com/Juloh-tuc"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src={github} alt="GitHub" className="social-icon" />
+					</a>
+				</div>
+			</footer>
+		</div>
 	);
-};
+}
 
 export default App;

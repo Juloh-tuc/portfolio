@@ -1,14 +1,14 @@
 import "./About.css";
 import avatar from "../assets/Moi.png";
+import cssIcon from "../assets/css-3.png";
+import git from "../assets/git.png";
 // Importation des icônes
 import htmlIcon from "../assets/html.png";
-import cssIcon from "../assets/css-3.png";
+import javascript from "../assets/java-script.png";
+import mysqlIcon from "../assets/mysql.png";
+import nodejs from "../assets/nodejs (1).png";
 import reactIcon from "../assets/react.png";
 import typescriptIcon from "../assets/typescript.png";
-import git from "../assets/git.png";
-import mysqlIcon from "../assets/mysql.png";
-import javascript from "../assets/java-script.png";
-import nodejs from "../assets/nodejs (1).png";
 
 const About = () => {
 	return (

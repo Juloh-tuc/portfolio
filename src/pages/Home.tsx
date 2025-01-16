@@ -2,9 +2,7 @@ import "./Home.css";
 import avatar from "../assets/Moi.png";
 import cv from "../assets/MonCV.pdf";
 
-
 function Home() {
-		
 	return (
 		<section className="home">
 			<div className="home-bg">
@@ -19,15 +17,14 @@ function Home() {
 						<img src={avatar} alt="Mon avatar" className="avatar" />
 						<span className="download-text">Télécharger mon CV</span>
 					</a>
-					
+
 					<a href="mailto:julie.tuco@gmail.com" className="button-blur">
 						Me Contacter
 					</a>
 				</div>
 			</div>
-			
 		</section>
 	);
-};
+}
 
 export default Home;

@@ -1,4 +1,3 @@
-
 :root {
 	margin: 0;
 	padding: 0;
@@ -7,9 +6,60 @@
 }
 body {
 	font-family: Arial, sans-serif;
-	background-color:red;
+	background: none;
 	margin: 0;
 	padding: 0;
 }
 
-	
+/* Layout */
+.layout {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Main Content */
+main {
+	flex-grow: 1;
+}
+
+/* Footer Styles */
+.footer {
+	background-color: rgba(52, 73, 94, 0.8); /* Couleur avec transparence */
+	color: #fff;
+
+	text-align: center;
+	font-size: 12px;
+	backdrop-filter: blur(10px); /* Effet de flou */
+	-webkit-backdrop-filter: blur(10px); /* Compatibilité Safari */
+	border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optionnel, pour un effet stylé */
+}
+
+.footer p {
+	margin: 0;
+}
+
+.social-links {
+	margin-top: 10px;
+}
+
+.social-links a {
+	margin: 0 10px;
+}
+
+.social-icon {
+	width: 30px;
+	height: 30px;
+	transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+	transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.footer p {
+		font-size: 12px;
+	}
+}
