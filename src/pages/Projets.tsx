@@ -2,7 +2,7 @@ import "./Projets.css";
 import BookWilder from "../assets/LogoBook.png";
 import LogoC from "../assets/LogoC.png";
 import LogoLetter from "../assets/LogoLetter.png";
-import LogoM from "../assets/LogoM.png";
+import LogoM from "../assets/logoM.png";
 import TravelUp from "../assets/logoTravel.png";
 
 const Projets = () => {
