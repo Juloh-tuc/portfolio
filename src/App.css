@@ -25,9 +25,8 @@ main {
 
 /* Footer Styles */
 .footer {
-	background-color: rgba(52, 73, 94, 0.8); /* Couleur avec transparence */
+	background-color:  #c45824;
 	color: #fff;
-
 	text-align: center;
 	font-size: 12px;
 	backdrop-filter: blur(10px); /* Effet de flou */

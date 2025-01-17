@@ -40,7 +40,7 @@ const Projets = () => {
 		{
 			id: "5",
 			title: "Mathémagie",
-			description: "Application pour aider les enfants dyscalculiques",
+			description: "Application pour aider les enfants dyscalculiques ( en cours...)",
 			image: LogoM,
 			link: "mathemagie.remote-fr-2.wilders.dev",
 		},
