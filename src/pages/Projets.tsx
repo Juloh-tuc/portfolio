@@ -4,7 +4,7 @@ import LogoC from "../assets/LogoC.png";
 import LogoLetter from "../assets/LogoLetter.png";
 import LogoM from "../assets/logoM.png";
 import TravelUp from "../assets/logoTravel.png";
-
+import LogoR from "../assets/LogoR.png";
 const Projets = () => {
 	const projetsData = [
 		{
@@ -40,9 +40,18 @@ const Projets = () => {
 		{
 			id: "5",
 			title: "Mathémagie",
-			description: "Application pour aider les enfants dyscalculiques ( en cours...)",
+			description:
+				"Application pour aider les enfants dyscalculiques ( en cours...)",
 			image: LogoM,
 			link: "mathemagie.remote-fr-2.wilders.dev",
+		},
+		{
+			id: "6",
+			title: "Pierre_Feuille, Ciseaux, Variante",
+			description:
+				"Application pour jouer a un jeu de notre enfance avec une variante",
+			image: LogoR,
+			link: "https://rock-paper-scissors-julie.netlify.app/",
 		},
 	];
 
