@@ -47,7 +47,7 @@ const Projets = () => {
 		},
 		{
 			id: "6",
-			title: "Pierre_Feuille, Ciseaux, Variante",
+			title: "Pierre, Feuille, Ciseaux, Variante",
 			description:
 				"Application pour jouer a un jeu de notre enfance avec une variante",
 			image: LogoR,
