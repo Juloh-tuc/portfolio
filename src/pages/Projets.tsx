@@ -5,6 +5,7 @@ import LogoLetter from "../assets/LogoLetter.png";
 import LogoM from "../assets/logoM.png";
 import TravelUp from "../assets/logoTravel.png";
 import LogoR from "../assets/LogoR.png";
+import SnakeGame from "../assets/LogoSnake.png";
 const Projets = () => {
 	const projetsData = [
 		{
@@ -52,6 +53,14 @@ const Projets = () => {
 				"Application pour jouer a un jeu de notre enfance avec une variante",
 			image: LogoR,
 			link: "https://rock-paper-scissors-julie.netlify.app/",
+		},
+		{
+			id: "7",
+			title: "Snake-Game",
+			description:
+				" un classique d'arcade où le joueur contrôle un serpent qui grandit",
+			image: SnakeGame,
+			link: "https://game-serpentar.netlify.app/",
 		},
 	];
 
